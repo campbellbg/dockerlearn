@@ -7,3 +7,15 @@ before_install:
 
 script:
   - docker run apptest:1 npm run test -- --coverage
+
+deploy:
+  provider: elasticbeanstalk
+  region: "us-east-2"
+  app: "bcdocker"
+  env: "bcdocker-env"
+  bucket_name: "elasticbeanstalk-us-east-2-118363283813" 
+  bucket_path: "bcdocker"
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
