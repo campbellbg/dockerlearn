@@ -9,10 +9,7 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <p>
-            This is change that I am making in order to test volumes
+            This is me hanging out in AWS Elastic Beanstalk
           </p>
           <a
             className="App-link"
